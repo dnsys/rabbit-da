@@ -1,0 +1,58 @@
+.burger
+  position: relative
+  display: none
+  width: 35px
+  cursor: pointer
+  z-index: 10000000
+
+  +media-992
+    display: block
+  +media-750
+    position: absolute
+    top: 65px
+    right: 30px
+
+  &__line
+    background-color: $basic-color
+    height: 7px
+    margin-bottom: 5px
+
+    &:nth-child(3)
+      width: 50%
+
+    .burger--active &
+      background: transparent
+      height: 11px
+      margin-bottom: 0
+      transition: 0.3s all
+
+      &:nth-child(1), &:nth-child(3)
+        &:before
+          content: ""
+          display: block
+          background: $basic-color
+          height: 100%
+          width: 11px
+          float: left
+
+        &:after
+          content: ""
+          display: block
+          background: $basic-color
+          height: 100%
+          width: 11px
+          float: right
+
+
+
+      &:nth-child(2)
+        &:before
+          content: ""
+          display: block
+          background: $basic-color
+          height: 100%
+          width: 11px
+          margin: 0 auto
+
+      &:nth-child(3)
+        width: 100%

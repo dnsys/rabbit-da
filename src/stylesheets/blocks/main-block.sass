@@ -1,0 +1,25 @@
+.section__main
+  height: 987px
+  z-index: 4
+  +media-480
+    height: 816px
+  &-numbering-block
+    position: absolute
+    top: 134px
+    right: 0
+    background: #2a2b2e
+    height: 248px
+    // width: 337px
+    padding: 0 115px
+    vertical-align: middle
+    z-index: 2
+
+    +media-640
+      right: -210px
+      overflow: hidden
+
+      .number-of-section
+        position: relative
+        left: -160px
+        bottom: -115px
+        font-size: 100px

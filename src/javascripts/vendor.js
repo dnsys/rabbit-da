@@ -1,0 +1,9 @@
+//= require ../../bower_components/jquery/dist/jquery.min.js
+//= require ../../bower_components/owl.carousel/dist/owl.carousel.min.js
+//= require ../../bower_components/gsap/src/minified/TweenMax.min.js
+//= require ../../bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js
+//= require ../../bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js
+//= require ../../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js
+/*/= require ../../bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js*/
+//= require ../../bower_components/tabbedContent/tabbedcontent.min.js
+//= require /vendor/jQuery.scrollSpeed.js

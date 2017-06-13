@@ -1,0 +1,86 @@
+.section
+  position: relative
+  &__title
+    position: relative
+    padding-top: 150px
+    letter-spacing: 2px
+    z-index: 5
+    transition: 0.5s ease
+
+    +media-750
+      padding-top: 210px
+
+    &--contacts
+      position: absolute
+      margin-top: -250px
+      padding: 0
+      +media-750
+        margin-top: -150px
+
+    &--clients
+      +media-750
+        padding-top: 100px
+
+    &--whatwe-do
+      +media-800
+        padding-top: 113px
+      +media-480
+        padding-top: 90px
+
+  &--cases, &--cases-item
+    padding-bottom: 350px
+
+  &__inner
+    +clearfix
+
+  &__content
+    margin-left: 24.5%
+    position: relative
+    +clearfix
+
+    +media-1200
+      margin-left: 37%
+    +media-992
+      margin-left: 30%
+    +media-800
+      margin-left: 19%
+    +media-480
+      margin-left: 9%
+
+  &__number
+    color: $basic-color
+    font-family: 'GothaProBol', sans-serif
+    font-size: 10px
+    letter-spacing: 0.01em
+
+  &__container
+    padding: 0 15px
+    max-width: 1230px
+    margin: 0 auto
+    height: 100%
+    position: relative
+    +clearfix
+
+  &__row
+    +clearfix
+
+  &__column
+    float: left
+    padding: 0 15px
+
+    $respond-size: ( sm: 750px, md: 992px, lg: 1230px)
+
+    @for $i from 1 through 12
+      &--col-xs-#{$i}
+        width: (100% / 12) * $i
+      &--col-xs-offset-#{$i}
+        margin-left: (100% / 12) * $i
+
+    @each $respond, $size in $respond-size
+      @media (min-width: $size)
+        @for $i from 1 through 12
+          &--col-#{$respond}-#{$i}
+            width: (100% / 12) * $i
+        @for $i from 1 through 12
+          &--col-#{$respond}-offset-#{$i}
+            margin-left: (100% / 12) * $i

@@ -1,0 +1,74 @@
+.footer
+  position: relative
+  top: 330px
+  display: table
+  width: 100%
+  color: #fff
+  a:hover
+    span
+      color: $basic-color
+
+  &__mood
+    font-size: 12px
+    letter-spacing: 0.5em
+    margin-left: 30px
+
+    +media-992
+      margin-left: 0
+
+  &__copyright
+    display: block
+    position: absolute
+    width: 100%
+    bottom: -195px
+    text-align: center
+    font-family: 'Merriweather-Light', sans-serif
+    font-size: 12px
+    letter-spacing: 0.01em
+    color: #d2d2d2
+
+    +media-640
+      bottom: -50px
+
+  &__info
+    display: table-cell
+    vertical-align: middle
+  &__social
+    text-align: right
+    +media-768
+      text-align: center
+    +media-640
+      display: none
+  &__social-icon
+    display: inline-block
+    margin: 0px 25px
+    padding-top: 3px
+    position: relative
+    svg
+      fill: #d2d2d2
+    &:hover
+      svg
+        fill: $basic-color
+
+  &__img-label
+    width: 20px
+    svg
+      margin-right: 5px
+      margin-left: 5px
+      fill: $basic-color
+
+.twitter-circle
+  transform: translate(-50%, -50%) scale(1.2)
+
+
+.twitter-circle
+  border: 1px solid #313235
+  border-radius: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  height: 64px
+  width: 64px
+  transition: .3s transform
+  +media-768
+    display: none

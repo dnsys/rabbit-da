@@ -1,0 +1,94 @@
+.action-block
+  position: absolute
+  //width: 355px
+  z-index: 3
+  &__number
+    font-size: 10px
+    font-family: GothaProBol, sans-serif
+    color: #5d5e61
+  &__title
+    color: $basic-color
+    font-size: 24px
+    margin-top: 17px
+    font-family: Merriweather-Regular, sans-serif
+  &__inner_text
+    font-size: 24px
+    font-family: Merriweather-Regular, sans-serif
+    margin-top: 20px
+    &--second-section
+      font-size: 16px
+      line-height: 35px
+      margin-top: 30px
+    & > span
+      font-family: Merriweather-Italic, sans-serif
+    &-attention
+      color: $basic-color
+      text-decoration: underline
+      font-family: Merriweather-Italic, sans-serif
+      &:hover
+        text-decoration: none
+        color: #d2d2d2
+  &__main-zero
+    left: 26%
+    top: 480px
+    +media-768
+      left: 19%
+    +media-480
+      top: 45%
+      left: 9%
+
+  &__actions-zero
+    left: 26%
+    top: 288px
+    transition: .5s ease
+    +media-768
+      top: 230px
+      left: 19%
+    +media-480
+      left: 9%
+      top: 17%
+  &__main-first
+    left: 70%
+    top: 600px
+    transition: .5s ease
+    +media-992
+      left: 65%
+    +media-850
+      left: 60%
+    +media-768
+      left: 50%
+    +media-480
+      top: 60%
+      left: 33%
+  &__actions-first
+    left: 70%
+    top: 294px
+    transition: .5s ease
+    +media-768
+      top: 450px
+      left: 50%
+    +media-480
+      left: 35%
+      top: 40%
+  &__main-tenth
+    left: 35%
+    top: 730px
+    transition: .5s ease
+    +media-768
+      left: 19%
+      +media-480
+        top: 630px
+        //display: none
+
+  &__actions-tenth
+    left: 35%
+    top: 545px
+    transition: .5s ease
+    +media-992
+      left: 30%
+    +media-768
+      top: 650px
+      left: 19%
+    +media-480
+      top: 630px
+      //display: none

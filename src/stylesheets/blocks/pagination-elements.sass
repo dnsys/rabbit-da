@@ -1,0 +1,55 @@
+.pagination-el
+  position: absolute
+  text-align: center
+  transition: .3s ease
+  &__main
+    top: 500px
+    left: 70%
+    +media-768
+      left: 60%
+    +media-640
+      left: 19%
+      top: 635px
+    +media-480
+      left: 9%
+      top: 90%
+  &__actions
+    top: 550px
+    left: 77%
+    +media-768
+      top: 460px
+      left: 22%
+    +media-480
+      top: 91%
+      left: 9%
+  &__page
+    display: inline-block
+    line-height: 62px
+    height: 62px
+    width: 50px
+    margin: 0px 20px 0px 0px
+    background: url('../images/not-active.png')
+    &--dark
+      background: url("../images/not-active-dark.png")
+    &:hover
+      @if $theme == legacy
+        background: url('../images/pag-link-hover.png')
+      @else if $theme == carrot
+        background: url('../images/pag-link-hover-carrot.png')
+      @else if $theme == spring
+        background: url('../images/pag-link-hover-spring.png')
+      color: #fff
+    &.active
+      @if $theme == legacy
+        background: url('../images/active.png')
+      @else if $theme == carrot
+        background: url('../images/active-carrot.png')
+      @else if $theme == spring
+        background: url('../images/active-spring.png')
+      color: #fff
+.pagination-el + .active
+  display: inline-block
+  line-height: 62px
+  height: 62px
+  width: 50px
+  background: url('../images/active.png')

@@ -1,0 +1,92 @@
+html
+  margin: 0
+
+.wrapper
+  width: 100%
+  background: url('../images/bg-image.jpg')
+
+  &__content
+    position: relative
+    overflow: hidden
+
+
+
+.container
+  position: relative
+  max-width: 1171px
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  z-index: 3
+
+.number-of-section
+  font-size: 140px
+  font-family: SHAKAGRAPHICS10, sans-serif
+  line-height: 248px
+  color: #313235
+  &--second
+    position: absolute
+    left: 266px
+    top: 75px
+    +media-768
+      left: -60px
+      top: -90px
+      font-size: 100px
+  &--third
+    color: #2a2b2e
+    position: absolute
+    left: 266px
+    top: 0px
+    +media-768
+      left: inherit
+      right: 0
+      font-size: 100px
+      top: -100px
+
+  &__dot
+    color: $basic-color
+
+.left-stripe
+  position: absolute
+  top: 0
+  left: 500px
+  z-index: 4
+  transition: 0.5s ease
+  +media-1500
+    left: 33.5%
+  +media-1024
+    left: 25%
+  +media-800
+    left: 18%
+  +media-768
+    left: 17%
+.right-stripe
+  position: absolute
+  top: 0
+  right: 265px
+  z-index: 2
+  transition: 0.5s ease
+  +media-1500
+    right: 18%
+  +media-768
+    right: 17%
+  &--second-section
+    right: 245px
+    +media-1500
+      right: 16.65%
+    +media-768
+      right: 13.65%
+
+.clients-left-stripe
+  position: absolute
+  top: 0
+  left: 234px
+  z-index: 0
+  height: 100%
+  +media-1500
+    left: 15.8%
+  +media-768
+    display: none
+.decore-el-3
+  +media-768
+    display: none

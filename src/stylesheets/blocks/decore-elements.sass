@@ -1,0 +1,124 @@
+#small-shuttle
+  position: absolute
+  left: 400px
+  top: 260px
+#rectangle
+  position: absolute
+  left: 57%
+  top: 390px
+#digital
+  position: absolute
+  top: 500px
+  right: 19.6%
+  +media-992
+    right: -24%
+  +media-480
+    right: initial
+    left: -23%
+#A-element
+  position: absolute
+  bottom: 360px
+  right: 53px
+  z-index: 15
+  fill: $basic-color
+  fill-opacity: 0
+  stroke: $basic-color
+  stroke-linejoin: round
+  stroke-width: 1px
+  fill-rule: evenodd
+  +media-992
+    display: none
+#big-rabbit
+  position: absolute
+  left: 520px
+  top: -100px
+  +media-768
+    left: 35%
+#R-element
+  position: absolute
+  top: 985px
+  z-index: 15
+  fill: $basic-color
+  +media-992
+    display: none
+
+#carrot
+  position: absolute
+  bottom: 230px
+  right: 217px
+
+.carrot
+  height: 100px
+  width: 99px
+  background: url(../images/carrot-sprite.png)
+  background-repeat: no-repeat
+  @if $theme == legacy
+    background-position: 0 0
+  @else if $theme == carrot
+    background-position: -99px 0
+  @else if $theme == spring
+    background-position: -198px 0
+  +media-992
+    display: none
+#big-shuttle
+  position: absolute
+  top: 100px
+  right: 300px
+  +media-992
+    display: none
+
+.decore-el-4
+  position: absolute
+  top: 640px
+  left: 150px
+  +media-768
+    left: 0
+
+.decore-el-3
+  position: absolute
+  top: 366px
+  left: 193px
+  +media-1500
+    left: 12.8%
+.decore-el-5
+  position: absolute
+  right: 80px
+  top: 340px
+  +media-768
+    display: none
+
+.decore-el-2
+  position: absolute
+  top: 514px
+  left: 54px
+  +media-1500
+    left: initial
+    right: (100% - 33.5%)
+  +media-1024
+    left: initial
+    right: (100% - 25%)
+  +media-800
+    left: initial
+    right: (100% - 18%)
+  +media-768
+    left: initial
+    right: (100% - 17%)
+  +media-480
+    left: initial
+    right: 72%
+    width: 70%
+    top: 52%
+
+
+.line
+  position: absolute
+  width: 1px
+  height: 10000px
+  top: 0
+  background: #3b3c40
+
+  &--left
+    left: 29.8%
+
+  &--right
+    right: 11.7%
